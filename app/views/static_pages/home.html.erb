@@ -25,9 +25,18 @@
                         <a class="page-scroll" href="#portfolio">Stylios</a>
                     </li>
 
+                    <% if !user_signed_in? %>
+
                     <li>                        
                         <%= link_to "Login", user_session_path, class: "page-scroll" %>
                     </li>
+
+                    <li>
+                        
+                        <%= link_to "Sign up", new_registration_path(resource_name), class: "page-scroll" %>
+                    </li>
+
+                    <% end %>
 
                     <!-- <li>
                         <a class="page-scroll" href="#about">About</a>
