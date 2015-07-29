@@ -10,11 +10,26 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    
+
 </head>
 <body>
 
-<%= yield %>
+<% if action_name != "home" %>
+  <%= render 'layouts/header' %>
+<% end %>
+
+<div id="content_wrapper">
+  <div class="container">
+    <div class="flash_messages">
+       <% if notice %>
+        <p class="notice"><%= notice %></p>
+      <%elsif alert %>
+        <p class="alert"><%= alert %></p>
+      <%end %>
+    </div>
+  </div>
+</div>
+    <%= yield %>
 
 </body>
 </html>
