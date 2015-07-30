@@ -1,0 +1,15 @@
+<div id="stylos" class="transitions-enabled">
+  <% @stylos.each do |stylo| %>
+    <div class="box panel panel-default">
+      
+      <%#= link_to (image_tag stylo.image.url), stylo %>
+    
+      <h2>
+        <%= link_to stylo.title, stylo %>
+      </h2>
+      <p class="user">
+        Submitted by <%= stylo.user.email %>
+      </p>
+    </div>
+  <% end %>
+</div>
