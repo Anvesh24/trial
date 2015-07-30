@@ -2,7 +2,7 @@
   <% @stylos.each do |stylo| %>
     <div class="box panel panel-default">
       
-      <%#= link_to (image_tag stylo.image.url), stylo %>
+      <%= link_to (image_tag stylo.photo.url), stylo %>
     
       <h2>
         <%= link_to stylo.title, stylo %>

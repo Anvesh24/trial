@@ -29,7 +29,14 @@
     </div>
   </div>
 </div>
+
+  <% if action_name == "home" %>    
     <%= yield %>
+  <%else %>
+    <div class="page">
+      <%= yield %>
+    </div>
+  <% end %>
 
 </body>
 </html>

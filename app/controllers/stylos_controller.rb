@@ -47,7 +47,7 @@ class StylosController < ApplicationController
   private
 
   def stylo_params
-    params.require(:stylo).permit(:title, :description, :image)
+    params.require(:stylo).permit(:title, :description, :photo)
   end
 
   def find_stylo
