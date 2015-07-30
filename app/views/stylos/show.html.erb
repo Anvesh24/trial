@@ -22,15 +22,15 @@
           </div>
           <div class="col-md-6">
             <div class="btn-group pull-right">
-              <%#= link_to like_stylo_path(@stylo), method: :put, class: "btn btn-default" do %>
-               <!--  <span class="glyphicon glyphicon-heart">
-                  <%#= @stylo.get_upvotes.size %>
-                </span> -->
+              <%= link_to like_stylo_path(@stylo), method: :put, class: "btn btn-default" do %>
+                <span class="glyphicon glyphicon-heart">
+                  <%= @stylo.get_upvotes.size %>
+                </span>
                 <% if user_signed_in?  %>
                   <%= link_to "Edit", edit_stylo_path, class: "btn btn-default" %>
                   <%= link_to "Delete", stylo_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
                 <% end %>
-              <%# end %>
+              <% end %>
             </div>
           </div>
         </div>
