@@ -1,3 +1,55 @@
 .strip{
   background-color: #222;
+  .navbar-brand{
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136 ;
+  }
+
+  .navbar-right{
+    .open.dropdown{
+      background-color: #222;
+      a:focus{
+               
+          background-color: #222;
+          color: #fed136;
+       
+      }
+    }
+    .dropdown{
+      .dropdown-menu{
+        background-color: #222;
+      }
+      a{
+        color: white;
+        &:hover{
+          color: #fed136;
+          background-color: #222;
+        }
+        li{
+          background-color: #222;
+          a{
+            color: white;
+
+            &:hover{
+              color: #fed136;
+              background-color: #222;
+            }
+          }
+
+        }
+      }
+
+    }
+    li {
+
+      a{
+        color: white;
+
+        &:hover{
+          color: #fed136;
+          background-color: #222;
+        }
+      }
+    }
+  }
 }
