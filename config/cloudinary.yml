@@ -1,0 +1,19 @@
+# config/cloudinary.yml
+development:
+  cloud_name: dk0iy98i3
+  api_key: '746519992948826'
+  api_secret: Tp63ZDBubjssfYIzpKX16HmLrxY
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dk0iy98i3
+  api_key: '746519992948826'
+  api_secret: Tp63ZDBubjssfYIzpKX16HmLrxY
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dk0iy98i3
+  api_key: '746519992948826'
+  api_secret: Tp63ZDBubjssfYIzpKX16HmLrxY
+  enhance_image_tag: true
+  static_image_support: false
