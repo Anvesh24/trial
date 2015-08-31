@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   
   
-
   devise_for :users
+
+  resources :users do
+    resources :profiles
+  end
+
   root 'static_pages#home'
 
   resources :stylos do

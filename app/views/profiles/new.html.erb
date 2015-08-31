@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <h2>Please provide the following details</h2>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <%= simple_form_for [@user, @profile] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description, as: :text %>
+        <%= f.input :phone %>
+        <h4>Services you provide</h4>
+        <%= f.input :service1 %>
+        <%= f.input :service2 %>
+        <%= f.input :service3 %>
+        <h4>Your adress</h4>
+        <%= f.input :line1 %>
+        <%= f.input :line2 %>
+        <%= f.input :city %>
+        <%= f.input :state %>
+        <%= f.input :country %>
+        <%= f.input :pin %>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
